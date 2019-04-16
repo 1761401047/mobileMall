@@ -1,0 +1,98 @@
+@import './base.less';
+.wrapper{
+    width: 100%;
+    .nav{
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: @gray-e;
+       .title{
+            font-size: 14px;
+       } 
+       .my-order{
+           padding-left: 10px;
+           border-left: 1px solid #ccc;
+       }
+    }
+    .content{
+        width: 100%;
+        margin-top: 41px;
+        .top{
+            width: 100%;
+            background-color: #fff;
+            .top-pic{
+                width: 100%;
+                height: 40vh;
+                background-size: cover;
+            }
+            .title{
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .price{
+                width: 100%;
+                color: @red;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
+        .good-type{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 45px;
+            font-size: 17px;
+            padding: 10px;
+            margin: 15px 0;
+            box-sizing: border-box;
+            background-color: #fff;
+            &.active{
+                background-color: #f7f7f7;
+                box-shadow: 0 0 10px 0 #ccc;
+            }
+        }
+        .good-detail{
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            background-color: #fff;
+            .title{
+                width: 100%;
+                height: 45px;
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 45px;
+            }
+            .pic-box{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .good-buy{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+        color: #f7f7f7;
+        background-color: @red;
+        &.active{
+            background-color: #DC143C;
+            color: #fff;
+            box-shadow: 0 0 10px 0 #eee;
+        }
+    }
+}

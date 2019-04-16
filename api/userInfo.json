@@ -1,0 +1,32 @@
+{   
+    "address": [
+        {
+            "buyerId": 1,
+            "name": "官翔",
+            "mobile": "188123464778",
+            "orderAdderss":"福建省厦门市集美区桥英街道集美大学本部",
+            "default": true
+        },
+        {
+            "buyerId": 2,
+            "name": "叶艳洁",
+            "mobile": "16842868566",
+            "orderAdderss":"湖南省长沙市胡敏区长沙大学本部",
+            "default": false
+        },
+        {
+            "buyerId": 3,
+            "name": "张煜奇",
+            "mobile": "17864321906",
+            "orderAdderss":"南京市翔安区解放路南京航天航空大学本部",
+            "default": false
+        },
+        {
+            "buyerId": 4,
+            "name": "陈盛康",
+            "mobile": "13809754267",
+            "orderAdderss":"福建省福州市仓山区闽江学院",
+            "default": false
+        }
+    ]
+ }

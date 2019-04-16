@@ -1,0 +1,243 @@
+@import './base.less';
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: @gray-e;
+    transition: transform 200ms linear 0ms;
+    .nav{
+        width: 100%;
+        height: 50px;
+        background-color: @gray-e;
+        .back{
+            display: inline-block;
+            line-height: 50px;
+            font-size: 20px;
+        }
+    }
+    .addr-box{
+        &.active{
+            background-color: @gray-d;
+        }
+        width: 100%;
+        height: 120px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #f7f7f7;        
+        .buyer-info{
+            display: flex;
+            justify-content: space-between;
+            .phone{
+                margin-right: 35px;
+            }
+        }
+        .addr-info{
+            display: flex;
+            justify-content: space-between;
+            .addr{
+                width: 90%;
+                font-size: 14px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .tip{
+            font-size: 14px;
+            color: #f80;
+        }
+    }
+    .content{
+        width: 100%;
+        background-color: #f7f7f7;
+        .good-info{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: @gray-e;
+            .pic{
+                flex-shrink: 0;
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-grow: 1;
+                .disc{
+                    font-size: 14px;
+                }
+                .spec{
+                    font-size: 13px;
+                    color: @gray-9;
+                }
+                .price-and-num{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 16px;
+                    .price-info{
+                        color: #f40;
+                    }
+                    .num-info{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .choose-num{
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 20px);
+            height: 50px;
+            margin: 0 auto;
+            font-size: 15px;
+            border-bottom: 1px solid @gray-e;    
+            .title{
+                line-height: 50px;
+            }
+            .choose-btn{
+                display: flex;
+                align-items: center;
+                div{
+                    height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                .btn{    
+                    background-color: @gray-d;
+                    &.active{
+                        background-color: @gray-c;
+                        box-shadow: 0 0 10px 0 @gray-e;
+                    }
+                }
+                .num{
+                    font-size: 16px;
+                }
+            }
+        }
+        .mode-box{
+            .ship-mode{
+                display: flex;
+                justify-content: space-between;
+                width: calc(100% - 20px);
+                height: 50px;
+                margin: 0 auto;
+                font-size: 15px;
+                border-bottom: 1px solid @gray-e; 
+                .title{
+                    line-height: 50px;
+                }
+                .cont{
+                    display: flex;
+                    line-height: 50px;
+                    .mode{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .risk-box{
+            .ship-risk{
+                display: flex;
+                justify-content: space-between;
+                width: calc(100% - 20px);
+                height: 50px;
+                margin: 0 auto;
+                font-size: 15px;
+                .title{
+                    line-height: 50px;
+                }
+                .cont{
+                    display: flex;
+                    align-items: center;
+                    line-height: 50px;
+                    .risk{
+                        margin-right: 10px;
+                    }
+                    input{
+                        width: 20px;
+                        height: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .pay-fri{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        background-color: #f7f7f7;
+        font-size: 15px;
+        input{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .account{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #f7f7f7;
+        border-top: 1px solid @gray-c;
+        .total-price{
+            display: flex;
+            margin-right: 10px;
+            .title{
+                margin-right: 10px;
+            }
+            .price{
+                color: @red;
+            }
+        }
+        .sub{
+            width: 100px;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            background-color: @red;
+            color: #efefef;
+            &.active{
+                background-color: #b30e2f;
+            }
+        }
+    }
+    .suc-tip{
+        display: none;
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0); 
+        width: 32vw;
+        height: 25vw;
+        line-height: 25vw;
+        text-align: center;
+        background-color: @gray-9;
+        opacity: 0.6;
+        border-radius: 14px;     
+        color: #f7f7f7;
+    }
+}

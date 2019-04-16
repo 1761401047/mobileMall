@@ -1,0 +1,52 @@
+@import './base.less';
+.wrapper{
+    width: 100%;
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: @gray-e;
+       .my-order{
+           padding-left: 10px;
+           border-left: 1px solid #ccc;
+       }
+    }
+    .content{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        .good{         
+            display: flex;
+            height: 100px;
+            width: 100%;
+            margin-bottom: 10px;
+            img{
+                flex-shrink: 0;
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+            }
+            .info{
+                flex-grow: 1;
+                padding: 5px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                vertical-align: top;
+                height: 100%;
+                box-sizing: border-box;
+                .disc{
+                    float: left;
+                    font-size: 15px;
+                }
+                .price{
+                    vertical-align: bottom;
+                    font-size: 20px;
+                    color: @red;
+                }
+            }
+        }
+    }
+}
